@@ -262,7 +262,7 @@
           </li>
            <li class="nav-item">
             <a href="./web.php" class="nav-link">
-              	<i class="fas fa-envelope"></i>
+              	<i class="fas fa-globe" style="font-size: 24px; color: white;"></i>
               <p>
                 Website
               </p>

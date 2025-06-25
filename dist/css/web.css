@@ -98,7 +98,7 @@
     /* ========================== */
     /* Hero Section */
     .hero-section {
-      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzVeXt2SXzrl_QAuY1Q2Pw2tz4JTPQeXHD4YCZvuVUkk0PNgGenEbvC1MyxOW7Li26LyRjk-901zxX2fNRYn1Q3O6DXdKdf5c9xaixzburiLitiUW0M6ng_UDV5dfeGIqkE7Cz1OJwA-P-okO9rsVN1ahEgiCzljUHJ03_VQhUE0hydP1OlD2bV7-sEFaX/s1080/DESAIN%20TOKO%20ATK%20DAN%20FOTOCOPY2.jpg'); /* Gambar contoh warung */
+      background-image: url('https://wallpaperaccess.com/full/1624848.jpg'); /* Gambar contoh warung */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -117,7 +117,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.68);
     }
 
     .hero-content {
