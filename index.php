@@ -260,6 +260,14 @@
               </p>
             </a>
           </li>
+           <li class="nav-item">
+            <a href="./web.php" class="nav-link">
+              	<i class="fas fa-envelope"></i>
+              <p>
+                Website
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

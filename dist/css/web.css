@@ -1,0 +1,389 @@
+    /* Reset dan Navbar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #1e90ff;
+    }
+
+    .cart {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.8em;
+      cursor: pointer;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+      }
+
+      .menu a {
+        padding: 10px 0;
+      }
+
+      .menu.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .cart {
+        margin-top: 10px;
+      }
+
+      nav {
+        align-items: flex-start;
+      }
+
+      #menu-toggle:checked + .hamburger + .menu {
+        display: flex;
+      }
+    }
+
+    /* ========================== */
+    /* Hero Section */
+    .hero-section {
+      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzVeXt2SXzrl_QAuY1Q2Pw2tz4JTPQeXHD4YCZvuVUkk0PNgGenEbvC1MyxOW7Li26LyRjk-901zxX2fNRYn1Q3O6DXdKdf5c9xaixzburiLitiUW0M6ng_UDV5dfeGIqkE7Cz1OJwA-P-okO9rsVN1ahEgiCzljUHJ03_VQhUE0hydP1OlD2bV7-sEFaX/s1080/DESAIN%20TOKO%20ATK%20DAN%20FOTOCOPY2.jpg'); /* Gambar contoh warung */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 90%;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+
+    .hero-content .hero-btn {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .hero-content .hero-btn:hover {
+      background-color: #e65500;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 1.8em;
+      }
+
+      .hero-content p {
+        font-size: 1em;
+      }
+    }
+
+
+
+    /* ========================== */
+/* About Section */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    padding: 0;
+  }
+
+  .about-text h2 {
+    font-size: 1.8em;
+  }
+
+  .about-text p {
+    font-size: 1em;
+  }
+}
+
+/* ========================== */
+/* Product Section */
+.product-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 2px;
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-name {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #e74c3c;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #0077cc;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+}
+
+
+/* ========================== */
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info, .footer-links, .footer-social {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-info h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
+  font-size: 1em;
+  color: #ddd;
+}
+
+.footer-links h4, .footer-social h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li, .footer-social ul li {
+  margin: 10px 0;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+  color: #1e90ff;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info, .footer-links, .footer-social {
+    flex: none;
+    margin-bottom: 20px;
+  }
+}
+
